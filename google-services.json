@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1082554748840-spe89impv9g6hg4fjepp31upv8nbp8r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pbdev.spendmate",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
           "client_id": "1082554748840-t03i32ta0s7a75jagob17o9cfamff2fv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
