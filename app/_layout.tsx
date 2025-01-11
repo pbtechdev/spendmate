@@ -1,9 +1,16 @@
-import { Stack } from "expo-router";
+import React from "react";
+import { Slot } from "expo-router";
+import { SessionProvider } from "@/src/context/session";
+import { GoogleSignin } from "@react-native-google-signin/google-signin";
 
 export default function RootLayout() {
+  GoogleSignin.configure({
+    webClientId: process.env.EXPO_PUBLIC_WEB_CLIENT_ID,
+  });
+
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ headerShown: false }} />
-    </Stack>
+    <SessionProvider>
+      <Slot />
+    </SessionProvider>
   );
 }

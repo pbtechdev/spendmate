@@ -9,3 +9,7 @@ npx expo run:android
 
 ## To get the SHA-1 fingure print
 keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+
+## How to install any library for Expo project
+npx expo install <your-package-name>
