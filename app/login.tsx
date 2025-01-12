@@ -24,7 +24,7 @@ const Index = () => {
         color={GoogleSigninButton.Color.Dark}
         onPress={async () => {
           await signIn();
-          router.replace("/(protected)/user-info");
+          router.replace("/");
         }}
       />
     </View>

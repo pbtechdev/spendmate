@@ -5,6 +5,8 @@ import { useSession } from "@/src/context/session";
 export default function ProtectedLayout() {
   const { user, isLoading } = useSession();
 
+  console.log(user)
+
   if (isLoading) {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -13,9 +15,7 @@ export default function ProtectedLayout() {
     );
   }
 
-  if (!user) {
-    return <Redirect href="/" />;
-  }
+  if (!user) return <Redirect href="/login" />
 
   // This layout can be deferred because it's not the root layout.
   return <Stack />;
